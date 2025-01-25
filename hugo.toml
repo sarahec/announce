@@ -1,0 +1,6 @@
+baseURL = 'https://better-simulations.com/'
+languageCode = 'en-us'
+title = 'Build Better Simulations -- Coming Soon'
+
+[[module.imports]]
+path = 'github.com/janraasch/hugo-product-launch'
