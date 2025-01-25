@@ -2,5 +2,44 @@ baseURL = 'https://better-simulations.com/'
 languageCode = 'en-us'
 title = 'Build Better Simulations -- Coming Soon'
 
+# This is a "one page"-website, so we do not need these kinds of pages...
+disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT", "404"]
+
 [[module.imports]]
 path = 'github.com/janraasch/hugo-product-launch'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+    # A "copyright"-line to be added at the bottom of the page.
+    # Hint: Markdown is supported in here as well. So you may e.g. add a link to your legal imprint-page.
+    copyright = "© 2025 NextQuestion LLC"
+
+    # The "description" of your website. This is used in the meta data of your generated html.
+    description = "Build Better Simulations to improve your students' learning."
+
+    # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
+    # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
+    # favicon = "images/favicon.png"
+
+    # These "images" are used for the structured data templates. This will show up, when
+    # services like Twitter or Slack want to generate a preview of a link to your site.
+    # See https://gohugo.io/templates/internal#twitter-cards and
+    # https://gohugo.io/templates/internal#open-graph.
+    # images = ["images/share-image.png"]
+
+    # Another "title" :-). This one is used as the site_name on the Hugo's internal
+    # opengraph structured data template.
+    # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+    title = "Build Better Simulations"
+
+    # LICENSE: Hugo Product Launch by Jan Raasch is licensed
+    # under Attribution 4.0 International (CC BY 4.0).
+    # See https://github.com/janraasch/hugo-product-launch#license.
+    # hidedesignbyline = true
+
+    [params.meta]
+        keywords = "learning, teaching, simulation, instructional design, development, ADDIE, e-learning, online learning, better simulations, better learning, better instruction"
