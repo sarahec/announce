@@ -25,3 +25,6 @@ hugo.linux
 
 # Build directory
 /public
+
+# Node
+node_modules/

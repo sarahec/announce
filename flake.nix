@@ -40,6 +40,7 @@
             firebase-tools # for Hugo hosting
             google-cloud-sdk # gcloud, using with hugo
             hugo
+            nodejs_22
           ];
 
         };
